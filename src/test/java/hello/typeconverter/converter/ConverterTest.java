@@ -7,7 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class ConverterTest {
 
-    //문자 -> 숫자
+    // 문자 -> 숫자
     @Test
     void stringToInteger() {
         StringToIntegerConverter converter = new StringToIntegerConverter();
@@ -15,7 +15,7 @@ public class ConverterTest {
         assertThat(result).isEqualTo(10);
     }
 
-    //숫자 -> 문자
+    // 숫자 -> 문자
     @Test
     void integerToString() {
         IntergerToStringConverter converter = new IntergerToStringConverter();
