@@ -12,7 +12,7 @@ public class MyNumberFormatter implements Formatter<Number> {
 
     @Override
     public Number parse(String text, Locale locale) throws ParseException {
-        log.info("text={}", "locale={}", text, locale);
+        log.info("text={}, locale={}", text, locale);
         NumberFormat format = NumberFormat.getInstance(locale);
         return format.parse(text);
     }
